@@ -14,9 +14,9 @@ namespace CKK.Logic.Models
 
         public Customer(int id, string Name, string Address)
         {
-            id = ID;
-            Name = name;
-            Address = address;
+            ID = id;
+            name = Name;
+            address = Address;
         }
 
         public int GetId()
