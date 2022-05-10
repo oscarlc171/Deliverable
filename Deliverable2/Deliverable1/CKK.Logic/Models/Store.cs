@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CKK.Logic.Models
 {
-    class Store
+    public class Store
     {
         private int ID;
         private string name;
