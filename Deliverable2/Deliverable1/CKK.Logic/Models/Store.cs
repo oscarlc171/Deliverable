@@ -14,6 +14,7 @@ namespace CKK.Logic.Models
         private Product product2;
         private Product product3;
 
+
         public int GetId()
         {
             return ID;
@@ -21,7 +22,7 @@ namespace CKK.Logic.Models
 
         public void SetId(int Id)
         {
-            Id = ID;
+            ID = Id;
         }
 
         public string GetName()
@@ -31,7 +32,7 @@ namespace CKK.Logic.Models
 
         public void SetName(string Name)
         {
-            Name = name;
+            name = Name;
         }
 
         public void AddStoreItem(Product prod)

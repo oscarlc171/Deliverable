@@ -26,7 +26,7 @@ namespace CKK.Logic.Models
 
         public void SetId(int id)
         {
-            id = ID;
+            ID = id;
         }
 
         public string GetName()
@@ -36,7 +36,7 @@ namespace CKK.Logic.Models
 
         public void SetName(string Name)
         {
-            Name = name;
+            name = Name;
         }
 
         public string GetAddress()
@@ -46,7 +46,7 @@ namespace CKK.Logic.Models
         
         public void SetAddress(string Address)
         {
-            Address = address;
+            address = Address;
         }
     }
 }

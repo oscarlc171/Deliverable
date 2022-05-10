@@ -24,7 +24,7 @@ namespace CKK.Logic.Models
 
 		public void SetProduct(Product product)
 		{
-			product = product1;
+			product1 = product;
 		}
 
 		public int GetQuantity()
@@ -34,7 +34,7 @@ namespace CKK.Logic.Models
 
 		public void SetQuantity(int Quantity)
 		{
-			Quantity = quantity;
+			quantity = Quantity;
 		}
 
 		public decimal GetTotal()
