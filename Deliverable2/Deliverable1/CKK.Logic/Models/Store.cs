@@ -8,48 +8,48 @@ namespace CKK.Logic.Models
 {
     public class Store
     {
-        private int ID;
-        private string name;
-        private Product product1;
-        private Product product2;
-        private Product product3;
+        private int _id;
+        private string _name;
+        private Product _product1;
+        private Product _product2;
+        private Product _product3;
 
 
         public int GetId()
         {
-            return ID;
+            return _id;
         }
 
-        public void SetId(int Id)
+        public void SetId(int id)
         {
-            ID = Id;
+            _id = id;
         }
 
         public string GetName()
         {
-            return name;
+            return _name;
         }
 
-        public void SetName(string Name)
+        public void SetName(string name)
         {
-            name = Name;
+            _name = name;
         }
 
         public void AddStoreItem(Product prod)
         {
-            if (product1 == null)
+            if (_product1 == null)
             {
-                product1 = prod;
+                _product1 = prod;
             }
 
-            else if (product2 == null)
+            else if (_product2 == null)
             {
-                product2 = prod;
+                _product2 = prod;
             }
 
-            else if (product3 == null)
+            else if (_product3 == null)
             {
-                product3 = prod;
+                _product3 = prod;
             }
         }
 
@@ -57,17 +57,17 @@ namespace CKK.Logic.Models
         {
             if (productNumber == 1)
             {
-                product1 = null;
+                _product1 = null;
             }
-            
+
             else if (productNumber == 2)
             {
-                product2 = null;
+                _product2 = null;
             }
 
             else if (productNumber == 3)
             {
-                product3 = null;
+                _product3 = null;
             }
         }
 
@@ -75,17 +75,17 @@ namespace CKK.Logic.Models
         {
             if (productNumber == 1)
             {
-                return product1;
+                return _product1;
             }
 
             else if (productNumber == 2)
             {
-                return product2;
+                return _product2;
             }
-            
+
             else if (productNumber == 3)
             {
-                return product3;
+                return _product3;
             }
 
             else
@@ -96,20 +96,20 @@ namespace CKK.Logic.Models
 
         public Product FindStoreItemById(int Id)
         {
-            if (Id == product1.GetId())
+            if (Id == _product1.GetId())
             {
-                return product1;
+                return _product1;
             }
 
-            else if (Id == product2.GetId())
+            else if (Id == _product2.GetId())
             {
-                return product2;
+                return _product2;
             }
 
-            else if (Id == product3.GetId())
+            else if (Id == _product3.GetId())
             {
-                return product3;
-            }    
+                return _product3;
+            }
 
             else
             {
@@ -117,5 +117,4 @@ namespace CKK.Logic.Models
             }
         }
     }
-
 }

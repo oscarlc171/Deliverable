@@ -8,45 +8,38 @@ namespace CKK.Logic.Models
 {
     public class Customer
     {
-        private int ID;
-        private string name;
-        private string address;
-
-        public Customer(int id, string Name, string Address)
-        {
-            ID = id;
-            name = Name;
-            address = Address;
-        }
+        private int _id;
+        private string _name;
+        private string _address;
 
         public int GetId()
         {
-            return ID;
+            return _id;
         }
 
         public void SetId(int id)
         {
-            ID = id;
+            _id = id;
         }
 
         public string GetName()
         {
-            return name;
+            return _name;
         }
 
-        public void SetName(string Name)
+        public void SetName(string name)
         {
-            name = Name;
+            _name = name;
         }
 
         public string GetAddress()
         {
-            return address;
+            return _address;
         }
-        
-        public void SetAddress(string Address)
+
+        public void SetAddress(string address)
         {
-            address = Address;
+            _address = address;
         }
     }
 }
