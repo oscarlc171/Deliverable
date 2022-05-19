@@ -13,7 +13,14 @@ namespace CKK.Logic.Models
         private ShoppingCartItem _product2;
         private ShoppingCartItem _product3;
 
-       
+        public ShoppingCart(Customer cust)
+        {
+            _customer = cust;
+        }
+
+        public ShoppingCart()
+        {
+        }
 
         public int GetCustomerId()
         {
