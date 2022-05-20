@@ -18,10 +18,6 @@ namespace CKK.Logic.Models
             _customer = cust;
         }
 
-        public ShoppingCart()
-        {
-        }
-
         public int GetCustomerId()
         {
             return _customer.GetId();
@@ -75,6 +71,24 @@ namespace CKK.Logic.Models
             {
                 _product3.SetProduct(prod);
                 _product3.SetQuantity(quantity);
+                return _product3;
+            }
+
+            else if (_product1 != null && _product1.GetProduct().GetId() == prod.GetId())
+            {
+                _product1.SetQuantity(_product1.GetQuantity() + quantity);
+                return _product1;
+            }
+
+            else if (_product2 != null && _product2.GetProduct().GetId() == prod.GetId())
+            {
+                _product2.SetQuantity(_product2.GetQuantity() + quantity);
+                return _product2;
+            }
+
+            else if (_product3 != null && _product3.GetProduct().GetId() == prod.GetId())
+            {
+                _product3.SetQuantity(_product3.GetQuantity() + quantity);
                 return _product3;
             }
 
