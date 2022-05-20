@@ -123,10 +123,7 @@ namespace CKK.Logic.Models
                 return _product3;
             }
 
-            else
-            {
-                return null;
-            }
+            return null;
         }
 
         public decimal GetTotal()
