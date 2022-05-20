@@ -55,19 +55,19 @@ namespace CKK.Logic.Models
 
             if (_product1 == null)
             {
-                ShoppingCartItem _product1 = new ShoppingCartItem(prod, quantity);
+                _product1 = new ShoppingCartItem(prod, quantity);
                 return _product1;
             }
 
             else if (_product2 == null)
             {
-                ShoppingCartItem _product2 = new ShoppingCartItem(prod, quantity);
+                _product2 = new ShoppingCartItem(prod, quantity);
                 return _product2;
             }
 
             else if (_product3 == null)
             {
-                ShoppingCartItem _product3 = new ShoppingCartItem(prod, quantity);
+                _product3 = new ShoppingCartItem(prod, quantity);
                 return _product3;
             }
 
@@ -123,7 +123,10 @@ namespace CKK.Logic.Models
                 return _product3;
             }
 
-            return null;
+            else
+            {
+                return null;
+            }
         }
 
         public decimal GetTotal()
