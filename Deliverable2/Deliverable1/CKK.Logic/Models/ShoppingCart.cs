@@ -55,22 +55,19 @@ namespace CKK.Logic.Models
 
             if (_product1 == null)
             {
-                ShoppingCartItem product1 = new ShoppingCartItem(prod, quantity);
-                _product1 = product1;
+                ShoppingCartItem _product1 = new ShoppingCartItem(prod, quantity);
                 return _product1;
             }
 
             else if (_product2 == null)
             {
-                ShoppingCartItem product2 = new ShoppingCartItem(prod, quantity);
-                _product2 = product2;
+                ShoppingCartItem _product2 = new ShoppingCartItem(prod, quantity);
                 return _product2;
             }
 
             else if (_product3 == null)
             {
-                ShoppingCartItem product3 = new ShoppingCartItem(prod, quantity);
-                _product3 = product3;
+                ShoppingCartItem _product3 = new ShoppingCartItem(prod, quantity);
                 return _product3;
             }
 
@@ -98,7 +95,11 @@ namespace CKK.Logic.Models
             }
 
         }
-
+        
+        public ShoppingCartItem AddProduct(Product prod)
+        {
+            return AddProduct(prod, 1);
+        }
 
         public ShoppingCartItem RemoveProduct(Product prod, int quantity)
         {
@@ -107,21 +108,21 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            if (_product1 != null)
+            if (_product1 != null && _product1.GetProduct().GetId() == prod.GetId())
             {
-                _product1 = null;
+                _product1.SetQuantity(_product1.GetQuantity() - quantity);
                 return _product1;
             }
 
             else if (_product2 != null)
             {
-                _product2 = null;
+                _product2.SetQuantity(_product2.GetQuantity() - quantity);
                 return _product2;
             }
 
             else if (_product3 != null)
             {
-                _product3 = null;
+                _product3.SetQuantity(_product3.GetQuantity() - quantity);
                 return _product3;
             }
 
