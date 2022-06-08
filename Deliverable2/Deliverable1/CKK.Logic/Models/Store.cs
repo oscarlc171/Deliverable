@@ -12,12 +12,6 @@ namespace CKK.Logic.Models
         private string _name;
         private List<StoreItem> _items = new List<StoreItem>();
 
-        public Store(List<StoreItem> items)
-        {
-            _items = items;
-        }
-
-
         public int GetId()
         {
             return _id;
