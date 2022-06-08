@@ -58,3 +58,15 @@ C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Logic
 C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Logic\bin\Debug\net5.0\CKK.Logic.dll
 C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Logic\bin\Debug\net5.0\ref\CKK.Logic.dll
 C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Logic\bin\Debug\net5.0\CKK.Logic.pdb
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\bin\Debug\net5.0\CKK.Logic.deps.json
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\bin\Debug\net5.0\CKK.Logic.dll
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\bin\Debug\net5.0\ref\CKK.Logic.dll
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\bin\Debug\net5.0\CKK.Logic.pdb
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\CKK.Logic.csproj.AssemblyReference.cache
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\CKK.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\CKK.Logic.AssemblyInfoInputs.cache
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\CKK.Logic.AssemblyInfo.cs
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\CKK.Logic.csproj.CoreCompileInputs.cache
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\CKK.Logic.dll
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\ref\CKK.Logic.dll
+C:\Users\4400113702\source\repos\Deliverable 4\Deliverable2\Deliverable1\CKK.Logic\obj\Debug\net5.0\CKK.Logic.pdb

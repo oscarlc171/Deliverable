@@ -42,20 +42,21 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            for (int i = 0; i < _products.Count; ++i)
+            var existingItem = GetProductById(prod.GetId());
+            if (existingItem == null)
             {
-                if (_products[i].GetProduct().GetId() == prod.GetId())
-                {
-                    _products[i].SetQuantity(_products[i].GetQuantity() + quantity);
-                }
-
-                else if (_products[i] == null)
-                {
-                    _products[i] = new ShoppingCartItem(prod, quantity);
-                }
+                var newItem = new ShoppingCartItem(prod, quantity);
+                _products.Add(newItem);
+                return newItem;
             }
 
-            return null;
+            else
+            {
+                existingItem.SetQuantity(existingItem.GetQuantity() + quantity);
+                return existingItem;
+            }
+
+     
         }
 
 
@@ -66,23 +67,24 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            for (int i = 0; i < _products.Count; ++i)
+            var existingItem = GetProductById(prod.GetId());
+            if (existingItem == null)
             {
-                if (_products[i].GetProduct().GetId() == prod.GetId())
-                {
-                 _products[i].SetQuantity(_products[i].GetQuantity() - quantity);
-
-                    if (_products[i].GetQuantity() < 0 || _products[i].GetQuantity() == 0)
-                    {
-                        _products.RemoveAt(i);
-                    }
-
-                }
+                return null;
             }
-            return null;
-            
 
-       
+            else
+            {
+                existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
+                if (existingItem.GetQuantity() < 0 || existingItem.GetQuantity() == 0)
+                {
+                    _products.Remove(existingItem);
+                }
+                return null;
+            }
+
+
+
         }
 
         public decimal GetTotal()
