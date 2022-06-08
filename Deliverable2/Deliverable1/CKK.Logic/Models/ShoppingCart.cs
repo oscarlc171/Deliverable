@@ -81,7 +81,7 @@ namespace CKK.Logic.Models
                 {
                     _products.Remove(existingItem);
                 }
-                return null;
+                return existingItem;
             }
 
 
@@ -94,7 +94,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < _products.Count; ++i)
             {
-                grandTotal += _products[i].GetProduct().GetPrice();
+                grandTotal += _products[i].GetProduct().GetPrice() * _products[i].GetQuantity();
             }
 
             return grandTotal;
