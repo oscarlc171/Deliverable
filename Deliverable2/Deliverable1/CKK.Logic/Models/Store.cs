@@ -45,7 +45,7 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            for (int i = 0; i <= _items.Count; ++i)
+            for (int i = 0; i < _items.Count; ++i)
             {
                 if (_items[i].GetProduct().GetId() == prod.GetId())
                 {
@@ -57,6 +57,8 @@ namespace CKK.Logic.Models
                     _items[i] = new StoreItem(prod, quantity);
                 }
             }
+
+            return null;
         }    
 
         public StoreItem RemoveStoreItem(int id, int quantity)
@@ -79,29 +81,13 @@ namespace CKK.Logic.Models
 
                 }
             }
+
+            return null;
         }
 
-        public Product GetStoreItem(int productNumber)
+        public List<StoreItem> GetStoreItems()
         {
-            if (productNumber == 1)
-            {
-                return _product1;
-            }
-
-            else if (productNumber == 2)
-            {
-                return _product2;
-            }
-
-            else if (productNumber == 3)
-            {
-                return _product3;
-            }
-
-            else
-            {
-                return null;
-            }
+            return _items;
         }
 
         public StoreItem FindStoreItemById(int id)

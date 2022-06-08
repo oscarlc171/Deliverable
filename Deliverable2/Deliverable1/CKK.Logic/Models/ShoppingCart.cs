@@ -31,6 +31,8 @@ namespace CKK.Logic.Models
                 }
 
             }
+
+            return null;
         }
 
         public ShoppingCartItem AddProduct(Product prod, int quantity)
@@ -40,7 +42,7 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            for (int i = 0; i <= _products.Count; ++i)
+            for (int i = 0; i < _products.Count; ++i)
             {
                 if (_products[i].GetProduct().GetId() == prod.GetId())
                 {
@@ -52,6 +54,8 @@ namespace CKK.Logic.Models
                     _products[i] = new ShoppingCartItem(prod, quantity);
                 }
             }
+
+            return null;
         }
 
         public ShoppingCartItem AddProduct(Product prod)
@@ -80,6 +84,7 @@ namespace CKK.Logic.Models
 
                 }
             }
+            return null;
             
 
        
@@ -97,27 +102,9 @@ namespace CKK.Logic.Models
             return grandTotal;
         }
 
-        public ShoppingCartItem GetProduct(int prodNum)
+        public List<ShoppingCartItem> GetProducts()
         {
-            if (prodNum == 1)
-            {
-                return _product1;
-            }
-
-            if (prodNum == 2)
-            {
-                return _product2;
-            }
-
-            if (prodNum == 3)
-            {
-                return _product3;
-            }
-
-            else
-            {
-                return null;
-            }
+            return _products;
         }
 
         
