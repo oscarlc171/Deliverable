@@ -71,17 +71,18 @@ namespace CKK.Logic.Models
             var existingItem = GetProductById(id);
             if (existingItem != null)
             {
-                if (existingItem.GetQuantity() - quantity <= 0)
+                if ((existingItem.GetQuantity() - quantity) <= 0)
                 {
                     _products.Remove(existingItem);
+                    existingItem.SetQuantity(0);
+                    return existingItem;
                 }
 
                 else
                 {
                     existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
+                    return existingItem;
                 }
-
-                return existingItem;
             }
 
             else
