@@ -78,6 +78,7 @@ namespace CKK.Logic.Models
                 {
                     existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
                 }
+                
                 return existingItem;
             }
 
