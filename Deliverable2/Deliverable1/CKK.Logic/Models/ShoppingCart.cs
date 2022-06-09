@@ -69,19 +69,24 @@ namespace CKK.Logic.Models
             }
 
             var existingItem = GetProductById(id);
-            if (existingItem == null)
+            if (existingItem != null)
             {
-                return null;
+                if (existingItem.GetQuantity() - quantity <= 0)
+                {
+                    _products.Remove(existingItem);
+                }
+
+                else
+                {
+                    existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
+                }
+
+                return existingItem;
             }
 
             else
             {
-                existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
-                if (existingItem.GetQuantity() <= 0)
-                {
-                    _products.Remove(existingItem);
-                }
-                return existingItem;
+                return null;
             }
 
 

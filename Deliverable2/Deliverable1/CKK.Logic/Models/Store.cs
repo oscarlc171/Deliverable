@@ -44,20 +44,19 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            for (int i = 0; i < _items.Count; ++i)
+            var existingItem = FindStoreItemById(prod.GetId());
+            if (existingItem != null)
             {
-                if (_items[i].GetProduct().GetId() == prod.GetId())
-                {
-                    _items[i].SetQuantity(_items[i].GetQuantity() + quantity);
-                }
-                
-                else if (_items[i] == null)
-                {
-                    _items[i] = new StoreItem(prod, quantity);
-                }
+                existingItem.SetQuantity(existingItem.GetQuantity() + quantity);
+                return existingItem;
             }
 
-            return null;
+            else
+            {
+                var newItem = new StoreItem(prod, quantity);
+                _items.Add(newItem);
+                return newItem;
+            }
         }    
 
         public StoreItem RemoveStoreItem(int id, int quantity)
@@ -67,21 +66,25 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            for (int i = 0; i < _items.Count; ++i)
+            var existingItem = FindStoreItemById(id);
+            if (existingItem != null)
             {
-                if (_items[i].GetProduct().GetId() == id)
+                if (existingItem.GetQuantity() - quantity <= 0)
                 {
-                    _items[i].SetQuantity(_items[i].GetQuantity() - quantity);
-
-                    if (_items[i].GetQuantity() < 0)
-                    {
-                        _items[i].SetQuantity(0);
-                    }
-
+                    existingItem.SetQuantity(0);
                 }
+
+                else
+                {
+                    existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
+                }
+                return existingItem;
             }
 
-            return null;
+            else
+            {
+                return null;
+            }
         }
 
         public List<StoreItem> GetStoreItems()
