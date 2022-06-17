@@ -11,7 +11,7 @@ namespace CKK.Logic.Interfaces
         public virtual string _name { get; set; }
         public virtual int _id { get; set; }
 
-        public Entity(string name, int id)
+        public Entity(int id, string name)
         {
             _name = name;
             _id = id;

@@ -11,8 +11,8 @@ namespace CKK.Logic.Models
     {
         private List<StoreItem> _items;
 
-        public Store(string name, int id)
-            : base(name, id)
+        public Store(int id, string name)
+            : base(id, name)
         {
             _items = new List<StoreItem>();
         }
