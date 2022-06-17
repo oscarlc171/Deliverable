@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CKK.Logic.Interfaces;
 
 namespace CKK.Logic.Models
 {
-    public class Customer
+    public class Customer : Entity
     {
-        private int _id;
-        private string _name;
-        private string _address;
+        public string _address { get; set; }
+
+        public Customer(string address, string name, int id)
+            : base(name, id)
+        {
+            _address = address;
+        }
 
         public int GetId()
         {

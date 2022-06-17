@@ -8,8 +8,8 @@ namespace CKK.Logic.Models
 {
     public class ShoppingCart
     {
-        private Customer _customer;
-        private List<ShoppingCartItem> _products;
+        public Customer _customer { get; set; }
+        public List<ShoppingCartItem> _products { get; set; }
 
         public ShoppingCart(Customer cust)
         {
@@ -74,6 +74,7 @@ namespace CKK.Logic.Models
                 if ((existingItem.GetQuantity() - quantity) <= 0)
                 {
                     _products.Remove(existingItem);
+                    existingItem.SetQuantity(0);
                     return existingItem;
                 }
 
