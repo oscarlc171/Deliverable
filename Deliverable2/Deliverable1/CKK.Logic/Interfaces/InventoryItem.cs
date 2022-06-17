@@ -9,8 +9,8 @@ namespace CKK.Logic.Interfaces
 {
     public class InventoryItem
     {
-        protected int _quantity { get; set; }
-        protected Product _product { get; set; }
+        public virtual int _quantity { get; set; }
+        public virtual Product _product { get; set; }
 
         public InventoryItem(Product product, int quantity)
         {

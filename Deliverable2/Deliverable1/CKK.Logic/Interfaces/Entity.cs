@@ -8,8 +8,8 @@ namespace CKK.Logic.Interfaces
 {
     public class Entity
     {
-        protected string _name { get; set; }
-        protected int _id { get; set; }
+        public virtual string _name { get; set; }
+        public virtual int _id { get; set; }
 
         public Entity(string name, int id)
         {

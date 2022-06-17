@@ -8,8 +8,8 @@ namespace CKK.Logic.Models
 {
     public class ShoppingCart
     {
-        private Customer _customer;
-        private List<ShoppingCartItem> _products;
+        public Customer _customer { get; set; }
+        public List<ShoppingCartItem> _products { get; set; }
 
         public ShoppingCart(Customer cust)
         {
@@ -19,14 +19,14 @@ namespace CKK.Logic.Models
 
         public int GetCustomerId()
         {
-            return _customer.GetId();
+            return _customer._id;
         }
 
         public ShoppingCartItem GetProductById(int id)
         {
             for (int i = 0; i < _products.Count; ++i)
             {
-                if (_products[i].GetProduct().GetId() == id)
+                if (_products[i]._product._id == id)
                 {
                     return _products[i];
                 }
@@ -43,7 +43,7 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            var existingItem = GetProductById(prod.GetId());
+            var existingItem = GetProductById(prod._id);
             if (existingItem == null)
             {
                 var newItem = new ShoppingCartItem(prod, quantity);
@@ -53,7 +53,7 @@ namespace CKK.Logic.Models
 
             else
             {
-                existingItem.SetQuantity(existingItem.GetQuantity() + quantity);
+                existingItem._quantity += quantity;
                 return existingItem;
             }
 
@@ -71,16 +71,16 @@ namespace CKK.Logic.Models
             var existingItem = GetProductById(id);
             if (existingItem != null)
             {
-                if ((existingItem.GetQuantity() - quantity) <= 0)
+                if ((existingItem._quantity - quantity) <= 0)
                 {
                     _products.Remove(existingItem);
-                    existingItem.SetQuantity(0);
+                    existingItem._quantity = 0;
                     return existingItem;
                 }
 
                 else
                 {
-                    existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
+                    existingItem._quantity -= quantity;
                     return existingItem;
                 }
             }
@@ -100,7 +100,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < _products.Count; ++i)
             {
-                grandTotal += _products[i].GetProduct().GetPrice() * _products[i].GetQuantity();
+                grandTotal += _products[i]._product._price * _products[i]._quantity;
             }
 
             return grandTotal;
