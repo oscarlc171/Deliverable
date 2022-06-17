@@ -17,26 +17,6 @@ namespace CKK.Logic.Models
             _items = new List<StoreItem>();
         }
 
-        public int GetId()
-        {
-            return _id;
-        }
-
-        public void SetId(int id)
-        {
-            _id = id;
-        }
-
-        public string GetName()
-        {
-            return _name;
-        }
-
-        public void SetName(string name)
-        {
-            _name = name;
-        }
-
         public StoreItem AddStoreItem(Product prod, int quantity)
         {
             if (quantity < 1)
@@ -44,7 +24,7 @@ namespace CKK.Logic.Models
                 return null;
             }
 
-            var existingItem = FindStoreItemById(prod.GetId());
+            var existingItem = FindStoreItemById(prod._id);
             if (existingItem != null)
             {
                 existingItem.SetQuantity(existingItem.GetQuantity() + quantity);
@@ -97,7 +77,7 @@ namespace CKK.Logic.Models
         {
             for (int i = 0; i < _items.Count; ++i)
             {
-                if (_items[i].GetProduct().GetId() == id)
+                if (_items[i]._product._id == id)
                 {
                     return _items[i];
                 }

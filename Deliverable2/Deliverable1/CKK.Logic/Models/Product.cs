@@ -11,10 +11,9 @@ namespace CKK.Logic.Models
     {
         public decimal _price { get; set; }
 
-        public Product(decimal price, string name, int id)
+        public Product(string name, int id)
             : base(name, id)
         {
-            _price = price;
         }
 
     }
