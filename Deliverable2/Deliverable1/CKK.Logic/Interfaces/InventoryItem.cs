@@ -7,15 +7,10 @@ using CKK.Logic.Models;
 
 namespace CKK.Logic.Interfaces
 {
-    public class InventoryItem
+    abstract public class InventoryItem
     {
         public virtual int _quantity { get; set; }
         public virtual Product _product { get; set; }
 
-        public InventoryItem(Product product, int quantity)
-        {
-            _quantity = quantity;
-            _product = product;
-        }
     }
 }

@@ -11,12 +11,6 @@ namespace CKK.Logic.Models
     {
         private List<StoreItem> _items;
 
-        public Store(string name, int id)
-            : base(name, id)
-        {
-            _items = new List<StoreItem>();
-        }
-
         public StoreItem AddStoreItem(Product prod, int quantity)
         {
             if (quantity < 1)
@@ -27,7 +21,7 @@ namespace CKK.Logic.Models
             var existingItem = FindStoreItemById(prod._id);
             if (existingItem != null)
             {
-                existingItem.SetQuantity(existingItem.GetQuantity() + quantity);
+                existingItem._quantity += quantity;
                 return existingItem;
             }
 
@@ -49,14 +43,14 @@ namespace CKK.Logic.Models
             var existingItem = FindStoreItemById(id);
             if (existingItem != null)
             {
-                if (existingItem.GetQuantity() - quantity <= 0)
+                if (existingItem._quantity - quantity <= 0)
                 {
-                    existingItem.SetQuantity(0);
+                    existingItem._quantity = 0;
                 }
 
                 else
                 {
-                    existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
+                    existingItem._quantity -= quantity;
                 }
                 
                 return existingItem;

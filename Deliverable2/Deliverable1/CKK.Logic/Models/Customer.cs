@@ -10,11 +10,6 @@ namespace CKK.Logic.Models
     public class Customer : Entity
     {
         public string _address { get; set; }
-
-        public Customer(string name, int id)
-            : base(name, id)
-        {
-        }
     }
 
 }

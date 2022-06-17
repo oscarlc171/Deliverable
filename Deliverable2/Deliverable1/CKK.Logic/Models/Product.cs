@@ -10,11 +10,5 @@ namespace CKK.Logic.Models
     public class Product : Entity
     {
         public decimal _price { get; set; }
-
-        public Product(int id, string name)
-            : base(id, name)
-        {
-        }
-
     }
 }
