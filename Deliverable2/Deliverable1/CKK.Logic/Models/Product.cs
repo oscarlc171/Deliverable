@@ -4,11 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Interfaces;
+using CKK.Logic.Exceptions;
 
 namespace CKK.Logic.Models
 {
     public class Product : Entity
     {
-        public decimal _price { get; set; }
+        private decimal _price;
+
+        public decimal Price
+        {
+            get
+            {
+                return _price;
+            }
+            set
+            {
+                if (_price < 0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
     }
 }
