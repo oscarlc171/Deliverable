@@ -4,17 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Interfaces;
+using CKK.Logic.Exceptions;
 
 namespace CKK.Logic.Models
 {
     public class Customer : Entity
     {
-        public string _address { get; set; }
-
-        public Customer(int id, string name)
-            : base(id, name)
+        public string _address;
+        public string Address
         {
+            get
+            {
+                return _address;
+            }
+
+            set
+            {
+                _address = value;
+            }
         }
     }
+
 
 }

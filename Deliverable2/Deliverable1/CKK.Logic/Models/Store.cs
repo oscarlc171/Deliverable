@@ -4,30 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Interfaces;
+using CKK.Logic.Exceptions;
 
 namespace CKK.Logic.Models 
 {
-    public class Store : Entity
+    public class Store : Entity, IStore
     {
         private List<StoreItem> _items;
-
-        public Store(int id, string name)
-            : base(id, name)
-        {
-            _items = new List<StoreItem>();
-        }
 
         public StoreItem AddStoreItem(Product prod, int quantity)
         {
             if (quantity < 1)
             {
-                return null;
+                throw new InventoryItemStockTooLowException();
             }
 
-            var existingItem = FindStoreItemById(prod._id);
+            var existingItem = FindStoreItemById(prod.Id);
             if (existingItem != null)
             {
-                existingItem.SetQuantity(existingItem.GetQuantity() + quantity);
+                existingItem.Quantity += quantity;
                 return existingItem;
             }
 
@@ -41,22 +36,22 @@ namespace CKK.Logic.Models
 
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
-            if (quantity < 1)
+            if (quantity < 0)
             {
-                return null;
+                throw new ArgumentOutOfRangeException();
             }
 
             var existingItem = FindStoreItemById(id);
             if (existingItem != null)
             {
-                if (existingItem.GetQuantity() - quantity <= 0)
+                if (existingItem.Quantity - quantity <= 0)
                 {
-                    existingItem.SetQuantity(0);
+                    existingItem.Quantity = 0;
                 }
 
                 else
                 {
-                    existingItem.SetQuantity(existingItem.GetQuantity() - quantity);
+                    existingItem.Quantity -= quantity;
                 }
                 
                 return existingItem;
@@ -64,7 +59,7 @@ namespace CKK.Logic.Models
 
             else
             {
-                return null;
+                throw new ProductDoesNotExistException();
             }
         }
 
@@ -75,9 +70,14 @@ namespace CKK.Logic.Models
 
         public StoreItem FindStoreItemById(int id)
         {
+            if (id < 0)
+            {
+                throw new InvalidIdException();
+            }
+
             for (int i = 0; i < _items.Count; ++i)
             {
-                if (_items[i]._product._id == id)
+                if (_items[i].product.Id == id)
                 {
                     return _items[i];
                 }

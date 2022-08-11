@@ -35,6 +35,11 @@ namespace CKK.Logic.Interfaces
                 {
                     throw new InvalidIdException();
                 }
+
+                else
+                {
+                    _id = value;
+                }
             }
         }
 
