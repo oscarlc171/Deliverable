@@ -24,6 +24,11 @@ namespace CKK.Logic.Models
                 {
                     throw new ArgumentOutOfRangeException();
                 }
+
+                else
+                {
+                    _price = value;
+                }
             }
         }
     }
