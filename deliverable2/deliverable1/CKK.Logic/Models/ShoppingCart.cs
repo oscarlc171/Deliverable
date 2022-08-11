@@ -33,7 +33,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < _products.Count; ++i)
             {
-                if (_products[i].product.Id == id)
+                if (_products[i].Product.Id == id)
                 {
                     return _products[i];
                 }
@@ -107,7 +107,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < _products.Count; ++i)
             {
-                grandTotal += _products[i].product.Price * _products[i].Quantity;
+                grandTotal += _products[i].Product.Price * _products[i].Quantity;
             }
 
             return grandTotal;
