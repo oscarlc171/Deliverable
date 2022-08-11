@@ -34,7 +34,7 @@ namespace CKK.Logic.Interfaces
             }
         }
 
-        public Product product
+        public Product Product
         {
             get
             {

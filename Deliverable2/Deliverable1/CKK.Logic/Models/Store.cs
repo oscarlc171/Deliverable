@@ -77,7 +77,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < _items.Count; ++i)
             {
-                if (_items[i].product.Id == id)
+                if (_items[i].Product.Id == id)
                 {
                     return _items[i];
                 }
