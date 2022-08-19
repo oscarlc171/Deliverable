@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Interfaces;
-
 namespace CKK.Logic.Models
 {
 	public class ShoppingCartItem : InventoryItem
@@ -12,12 +11,9 @@ namespace CKK.Logic.Models
 		public ShoppingCartItem(Product product, int quantity)
 		{
 		}
-
 		public decimal GetTotal()
-        {
-			return Quantity * Product.Price;
-        }
-
-
+		{
+			return _quantity * _product._price;
+		}
 	}
 }
