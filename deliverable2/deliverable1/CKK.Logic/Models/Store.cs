@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Interfaces;
-namespace CKK.Logic.Models
+using CKK.Logic.Exceptions;
+
+namespace CKK.Logic.Models 
 {
     public class Store : Entity, IStore
     {
@@ -13,12 +15,12 @@ namespace CKK.Logic.Models
         {
             if (quantity < 1)
             {
-                return null;
+                throw new InventoryItemStockTooLowException();
             }
             var existingItem = FindStoreItemById(prod._id);
             if (existingItem != null)
             {
-                existingItem._quantity += quantity;
+                existingItem.Quantity += quantity;
                 return existingItem;
             }
             else
@@ -27,30 +29,30 @@ namespace CKK.Logic.Models
                 _items.Add(newItem);
                 return newItem;
             }
-        }
+        }    
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
             if (quantity < 1)
             {
-                return null;
+                throw new ArgumentOutOfRangeException();
             }
             var existingItem = FindStoreItemById(id);
             if (existingItem != null)
             {
-                if (existingItem._quantity - quantity <= 0)
+                if (existingItem.Quantity - quantity <= 0)
                 {
-                    existingItem._quantity = 0;
+                    existingItem.Quantity = 0;
                 }
                 else
                 {
-                    existingItem._quantity -= quantity;
+                    existingItem.Quantity -= quantity;
                 }
-
+                
                 return existingItem;
             }
             else
             {
-                return null;
+                throw new ProductDoesNotExistException();
             }
         }
         public List<StoreItem> GetStoreItems()
@@ -59,9 +61,14 @@ namespace CKK.Logic.Models
         }
         public StoreItem FindStoreItemById(int id)
         {
+            if (id < 0)
+            {
+                throw new InvalidIdException();
+            }
+
             for (int i = 0; i < _items.Count; ++i)
             {
-                if (_items[i]._product._id == id)
+                if (_items[i].product._id == id)
                 {
                     return _items[i];
                 }
