@@ -17,7 +17,7 @@ namespace CKK.Logic.Models
             {
                 throw new InventoryItemStockTooLowException();
             }
-            var existingItem = FindStoreItemById(prod._id);
+            var existingItem = FindStoreItemById(prod.Id);
             if (existingItem != null)
             {
                 existingItem.Quantity += quantity;
@@ -68,7 +68,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < _items.Count; ++i)
             {
-                if (_items[i].product._id == id)
+                if (_items[i].Product.Id == id)
                 {
                     return _items[i];
                 }
