@@ -4,80 +4,64 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Interfaces;
-using CKK.Logic.Exceptions;
-
-namespace CKK.Logic.Models 
+namespace CKK.Logic.Models
 {
     public class Store : Entity, IStore
     {
         private List<StoreItem> _items;
-
         public StoreItem AddStoreItem(Product prod, int quantity)
         {
             if (quantity < 1)
             {
-                throw new InventoryItemStockTooLowException();
+                return null;
             }
-
-            var existingItem = FindStoreItemById(prod.Id);
+            var existingItem = FindStoreItemById(prod._id);
             if (existingItem != null)
             {
-                existingItem.Quantity += quantity;
+                existingItem._quantity += quantity;
                 return existingItem;
             }
-
             else
             {
                 var newItem = new StoreItem(prod, quantity);
                 _items.Add(newItem);
                 return newItem;
             }
-        }    
-
+        }
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
-            if (quantity < 0)
+            if (quantity < 1)
             {
-                throw new ArgumentOutOfRangeException();
+                return null;
             }
-
             var existingItem = FindStoreItemById(id);
             if (existingItem != null)
             {
-                if (existingItem.Quantity - quantity <= 0)
+                if (existingItem._quantity - quantity <= 0)
                 {
-                    existingItem.Quantity = 0;
+                    existingItem._quantity = 0;
                 }
-
                 else
                 {
-                    existingItem.Quantity -= quantity;
+                    existingItem._quantity -= quantity;
                 }
-                
+
                 return existingItem;
             }
-
             else
             {
-                throw new ProductDoesNotExistException();
+                return null;
             }
         }
-
         public List<StoreItem> GetStoreItems()
         {
             return _items;
         }
-
         public StoreItem FindStoreItemById(int id)
         {
-            if (id < 0)
-            {
-                throw new InvalidIdException();
-            }
-
             for (int i = 0; i < _items.Count; ++i)
             {
-                if (_items[i].Product.Id == id)
+                if (_items[i]._product._id == id)
                 {
                     return _items[i];
                 }
