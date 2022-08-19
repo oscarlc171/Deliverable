@@ -10,16 +10,16 @@ namespace CKK.Logic.Models
 {
     public class ShoppingCart : IShoppingCart
     {
-        public Customer _customer { get; set; }
-        public List<ShoppingCartItem> _products { get; set; }
+        public Customer Customer { get; set; }
+        public List<ShoppingCartItem> Products { get; set; }
         public ShoppingCart(Customer cust)
         {
-            _customer = cust;
-            _products = new List<ShoppingCartItem>();
+            Customer = cust;
+            Products = new List<ShoppingCartItem>();
         }
         public int GetCustomerId()
         {
-            return _customer._id;
+            return Customer._id;
         }
         public ShoppingCartItem GetProductById(int id)
         {
@@ -28,11 +28,11 @@ namespace CKK.Logic.Models
                 throw new InvalidIdException();
             }
 
-            for (int i = 0; i < _products.Count; ++i)
+            for (int i = 0; i < Products.Count; ++i)
             {
-                if (_products[i].product._id == id)
+                if (Products[i].product._id == id)
                 {
-                    return _products[i];
+                    return Products[i];
                 }
             }
             return null;
@@ -47,7 +47,7 @@ namespace CKK.Logic.Models
             if (existingItem == null)
             {
                 var newItem = new ShoppingCartItem(prod, quantity);
-                _products.Add(newItem);
+                Products.Add(newItem);
                 return newItem;
             }
             else
@@ -68,7 +68,7 @@ namespace CKK.Logic.Models
             {
                 if ((existingItem.Quantity - quantity) <= 0)
                 {
-                    _products.Remove(existingItem);
+                    Products.Remove(existingItem);
                     existingItem.Quantity = 0;
                     return existingItem;
                 }
@@ -86,15 +86,15 @@ namespace CKK.Logic.Models
         public decimal GetTotal()
         {
             decimal grandTotal = 0;
-            for (int i = 0; i < _products.Count; ++i)
+            for (int i = 0; i < Products.Count; ++i)
             {
-                grandTotal += _products[i].product._price * _products[i].Quantity;
+                grandTotal += Products[i].product.Price * Products[i].Quantity;
             }
             return grandTotal;
         }
         public List<ShoppingCartItem> GetProducts()
         {
-            return _products;
+            return Products;
         }
 
     }
