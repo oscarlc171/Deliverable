@@ -9,22 +9,22 @@ namespace CKK.Logic.Interfaces
 {
     abstract public class Entity
     {
-        public virtual string _name { get; set; }
-        public virtual int _id
+        public virtual string Name { get; set; }
+        public virtual int Id
         {
             get
             {
-                return _id;
+                return Id;
             }
             set
             {
-                if (_id < 0)
+                if (Id < 0)
                 {
                     throw new InvalidIdException();
                 }
                 else
                 {
-                    _id = value;
+                    Id = value;
                 }
             }
         }

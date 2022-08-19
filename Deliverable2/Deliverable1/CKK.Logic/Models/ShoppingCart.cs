@@ -19,7 +19,7 @@ namespace CKK.Logic.Models
         }
         public int GetCustomerId()
         {
-            return Customer._id;
+            return Customer.Id;
         }
         public ShoppingCartItem GetProductById(int id)
         {
@@ -30,7 +30,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < Products.Count; ++i)
             {
-                if (Products[i].product._id == id)
+                if (Products[i].product.Id == id)
                 {
                     return Products[i];
                 }
@@ -43,7 +43,7 @@ namespace CKK.Logic.Models
             {
                 throw new InventoryItemStockTooLowException();
             }
-            var existingItem = GetProductById(prod._id);
+            var existingItem = GetProductById(prod.Id);
             if (existingItem == null)
             {
                 var newItem = new ShoppingCartItem(prod, quantity);
