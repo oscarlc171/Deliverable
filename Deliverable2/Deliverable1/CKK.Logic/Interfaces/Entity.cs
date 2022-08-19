@@ -10,11 +10,12 @@ namespace CKK.Logic.Interfaces
     abstract public class Entity
     {
         public virtual string Name { get; set; }
+        private int id;
         public virtual int Id
         {
             get
             {
-                return Id;
+                return id;
             }
             set
             {
@@ -24,7 +25,7 @@ namespace CKK.Logic.Interfaces
                 }
                 else
                 {
-                    Id = value;
+                    id = value;
                 }
             }
         }
