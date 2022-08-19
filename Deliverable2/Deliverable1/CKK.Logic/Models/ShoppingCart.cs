@@ -30,7 +30,7 @@ namespace CKK.Logic.Models
 
             for (int i = 0; i < Products.Count; ++i)
             {
-                if (Products[i].product.Id == id)
+                if (Products[i].Product.Id == id)
                 {
                     return Products[i];
                 }
@@ -88,7 +88,7 @@ namespace CKK.Logic.Models
             decimal grandTotal = 0;
             for (int i = 0; i < Products.Count; ++i)
             {
-                grandTotal += Products[i].product.Price * Products[i].Quantity;
+                grandTotal += Products[i].Product.Price * Products[i].Quantity;
             }
             return grandTotal;
         }
