@@ -13,7 +13,7 @@ namespace CKK.Logic.Models
 		}
 		public decimal GetTotal()
 		{
-			return _quantity * _product._price;
+			return Quantity * product._price;
 		}
 	}
 }

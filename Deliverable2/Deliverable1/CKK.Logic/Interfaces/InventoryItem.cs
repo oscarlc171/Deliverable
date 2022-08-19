@@ -4,11 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Models;
+using CKK.Logic.Exceptions;
+
 namespace CKK.Logic.Interfaces
 {
     abstract public class InventoryItem
     {
-        public virtual int _quantity { get; set; }
-        public virtual Product _product { get; set; }
+        private int _quantity;
+        private Product _product;
+
+        public int Quantity
+        {
+            get
+            {
+                return _quantity;
+            }
+
+            set
+            {
+                if (_quantity < 0)
+                {
+                    throw new InventoryItemStockTooLowException();
+                }
+
+                else
+                {
+                    _quantity = value;
+                }
+            }
+        }
+
+        public Product product
+        {
+            get
+            {
+                return _product;
+            }
+
+            set
+            {
+                _product = value;
+            }
+        }
+
     }
 }

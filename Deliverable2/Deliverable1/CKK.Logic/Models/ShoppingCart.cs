@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Interfaces;
+using CKK.Logic.Exceptions;
+
 namespace CKK.Logic.Models
 {
     public class ShoppingCart : IShoppingCart
@@ -21,9 +23,14 @@ namespace CKK.Logic.Models
         }
         public ShoppingCartItem GetProductById(int id)
         {
+            if (id < 0)
+            {
+                throw new InvalidIdException();
+            }
+
             for (int i = 0; i < _products.Count; ++i)
             {
-                if (_products[i]._product._id == id)
+                if (_products[i].product._id == id)
                 {
                     return _products[i];
                 }
@@ -34,7 +41,7 @@ namespace CKK.Logic.Models
         {
             if (quantity < 1)
             {
-                return null;
+                throw new InventoryItemStockTooLowException();
             }
             var existingItem = GetProductById(prod._id);
             if (existingItem == null)
@@ -45,7 +52,7 @@ namespace CKK.Logic.Models
             }
             else
             {
-                existingItem._quantity += quantity;
+                existingItem.Quantity += quantity;
                 return existingItem;
             }
 
@@ -54,26 +61,26 @@ namespace CKK.Logic.Models
         {
             if (quantity < 1)
             {
-                return null;
+                throw new ArgumentOutOfRangeException();
             }
             var existingItem = GetProductById(id);
             if (existingItem != null)
             {
-                if ((existingItem._quantity - quantity) <= 0)
+                if ((existingItem.Quantity - quantity) <= 0)
                 {
                     _products.Remove(existingItem);
-                    existingItem._quantity = 0;
+                    existingItem.Quantity = 0;
                     return existingItem;
                 }
                 else
                 {
-                    existingItem._quantity -= quantity;
+                    existingItem.Quantity -= quantity;
                     return existingItem;
                 }
             }
             else
             {
-                return null;
+                throw new ProductDoesNotExistException();
             }
         }
         public decimal GetTotal()
@@ -81,7 +88,7 @@ namespace CKK.Logic.Models
             decimal grandTotal = 0;
             for (int i = 0; i < _products.Count; ++i)
             {
-                grandTotal += _products[i]._product._price * _products[i]._quantity;
+                grandTotal += _products[i].product._price * _products[i].Quantity;
             }
             return grandTotal;
         }
