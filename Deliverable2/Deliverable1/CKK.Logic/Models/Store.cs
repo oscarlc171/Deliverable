@@ -13,7 +13,7 @@ namespace CKK.Logic.Models
         private List<StoreItem> _items;
         public StoreItem AddStoreItem(Product prod, int quantity)
         {
-            if (quantity < 1)
+            if (quantity <= 0)
             {
                 throw new InventoryItemStockTooLowException();
             }
@@ -32,7 +32,7 @@ namespace CKK.Logic.Models
         }    
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
-            if (quantity < 1)
+            if (quantity < 0)
             {
                 throw new ArgumentOutOfRangeException();
             }
