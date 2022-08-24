@@ -50,11 +50,10 @@ namespace CKK.Logic.Models
                 
                 return existingItem;
             }
-            else if (existingItem == null)
+            else
             {
                 throw new ProductDoesNotExistException();
             }
-            return null;
         }
         public List<StoreItem> GetStoreItems()
         {
