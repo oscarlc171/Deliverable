@@ -28,12 +28,12 @@ namespace CKK.Logic.Models
                 throw new InvalidIdException();
             }
 
-            for (int i = 0; i < Products.Count; ++i)
+            else
             {
-                if (Products[i].Product.Id == id)
-                {
-                    return Products[i];
-                }
+                var getProductById =
+                    from product in Products
+                    where product.Product.Id == id
+                    select product;
             }
             return null;
         }
@@ -59,12 +59,13 @@ namespace CKK.Logic.Models
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
         {
+            var existingItem = GetProductById(id);
             if (quantity < 0)
             {
                 throw new ArgumentOutOfRangeException();
             }
-            var existingItem = GetProductById(id);
-            if (existingItem != null)
+        
+            else if (existingItem != null)
             {
                 if ((existingItem.Quantity - quantity) <= 0)
                 {

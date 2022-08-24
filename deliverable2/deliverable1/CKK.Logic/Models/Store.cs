@@ -10,7 +10,7 @@ namespace CKK.Logic.Models
 {
     public class Store : Entity, IStore
     {
-        private List<StoreItem> _items;
+        private List<StoreItem> _items = new List<StoreItem>();
         public StoreItem AddStoreItem(Product prod, int quantity)
         {
             if (quantity <= 0)
@@ -66,12 +66,12 @@ namespace CKK.Logic.Models
                 throw new InvalidIdException();
             }
 
-            for (int i = 0; i < _items.Count; ++i)
+            else
             {
-                if (_items[i].Product.Id == id)
-                {
-                    return _items[i];
-                }
+                var findStoreItem =
+                  from item in _items
+                  where item.Product.Id == id
+                  select item;
             }
             return null;
         }
