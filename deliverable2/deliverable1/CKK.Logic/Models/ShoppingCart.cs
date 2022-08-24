@@ -43,19 +43,26 @@ namespace CKK.Logic.Models
             {
                 throw new InventoryItemStockTooLowException();
             }
-            var existingItem = GetProductById(prod.Id);
-            if (existingItem == null)
-            {
-                var newItem = new ShoppingCartItem(prod, quantity);
-                Products.Add(newItem);
-                return newItem;
-            }
+
             else
             {
-                existingItem.Quantity += quantity;
-                return existingItem;
-            }
+                foreach (var product in Products)
+                {
+                    if (product.Product == prod)
+                    {
+                        product.Quantity += quantity;
+                        return product;
+                    }
 
+                    else
+                    {
+                        var newProduct = new ShoppingCartItem(prod, quantity);
+                        Products.Add(newProduct);
+                        return newProduct;
+                    }
+                }
+                return null;
+            }
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
         {
@@ -64,25 +71,32 @@ namespace CKK.Logic.Models
             {
                 throw new ArgumentOutOfRangeException();
             }
-        
-            else if (existingItem != null)
+
+            foreach (var product in Products)
             {
-                if ((existingItem.Quantity - quantity) <= 0)
+                if (product.Product.Id == id)
                 {
-                    existingItem.Quantity = 0;
-                    Products.Remove(existingItem);
-                    return existingItem;
+                    if ((product.Quantity - quantity) <= 0)
+                    {
+                        product.Quantity = 0;
+                        Products.Remove(product);
+                        return product;
+                    }
+
+                    else
+                    {
+                        product.Quantity -= quantity;
+                        return product;
+                    }
+        
                 }
+
                 else
                 {
-                    existingItem.Quantity -= quantity;
-                    return existingItem;
+                    throw new ProductDoesNotExistException();
                 }
             }
-            else
-            {
-                throw new ProductDoesNotExistException();
-            }
+            return null;
         }
         public decimal GetTotal()
         {
