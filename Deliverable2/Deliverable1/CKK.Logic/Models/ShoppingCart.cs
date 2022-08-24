@@ -59,17 +59,18 @@ namespace CKK.Logic.Models
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
         {
+            var existingItem = GetProductById(id);
             if (quantity < 0)
             {
                 throw new ArgumentOutOfRangeException();
             }
-            var existingItem = GetProductById(id);
-            if (existingItem != null)
+        
+            else if (existingItem != null)
             {
                 if ((existingItem.Quantity - quantity) <= 0)
                 {
-                    Products.Remove(existingItem);
                     existingItem.Quantity = 0;
+                    Products.Remove(existingItem);
                     return existingItem;
                 }
                 else

@@ -32,14 +32,15 @@ namespace CKK.Logic.Models
         }    
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
+            var existingItem = FindStoreItemById(id);
             if (quantity < 0)
             {
                 throw new ArgumentOutOfRangeException();
             }
-            var existingItem = FindStoreItemById(id);
-            if (existingItem != null)
+            
+            else if (existingItem != null)
             {
-                if (existingItem.Quantity - quantity <= 0)
+                if ((existingItem.Quantity - quantity) <= 0)
                 {
                     existingItem.Quantity = 0;
                 }
