@@ -28,12 +28,12 @@ namespace CKK.Logic.Models
                 throw new InvalidIdException();
             }
 
-            for (int i = 0; i < Products.Count; ++i)
+            else
             {
-                if (Products[i].Product.Id == id)
-                {
-                    return Products[i];
-                }
+                var getProductById =
+                    from product in Products
+                    where product.Product.Id == id
+                    select product;
             }
             return null;
         }
