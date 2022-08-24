@@ -17,18 +17,23 @@ namespace CKK.Logic.Models
             {
                 throw new InventoryItemStockTooLowException();
             }
-            var existingItem = FindStoreItemById(prod.Id);
-            if (existingItem != null)
+
+            foreach (var item in _items)
             {
-                existingItem.Quantity += quantity;
-                return existingItem;
+                if (item.Product == prod)
+                {
+                    item.Quantity += quantity;
+                    return item;
+                }
+
+                else
+                {
+                    var newItem = new StoreItem(prod, quantity);
+                    _items.Add(newItem);
+                    return newItem;
+                }
             }
-            else
-            {
-                var newItem = new StoreItem(prod, quantity);
-                _items.Add(newItem);
-                return newItem;
-            }
+            return null;
         }    
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
