@@ -37,24 +37,30 @@ namespace CKK.Logic.Models
             {
                 throw new ArgumentOutOfRangeException();
             }
-            
-            else if (existingItem != null)
+
+            foreach (var item in _items)
             {
-                if ((existingItem.Quantity - quantity) <= 0)
+                if (item.Product.Id == id)
                 {
-                    existingItem.Quantity = 0;
+                    if ((item.Quantity - quantity) <= 0)
+                    {
+                        item.Quantity = 0;
+                    }
+
+                    else
+                    {
+                        item.Quantity -= quantity;
+                    }
+                    return item;
                 }
+
                 else
                 {
-                    existingItem.Quantity -= quantity;
+                    throw new ProductDoesNotExistException();
                 }
-                
-                return existingItem;
             }
-            else
-            {
-                throw new ProductDoesNotExistException();
-            }
+            return null;
+            
         }
         public List<StoreItem> GetStoreItems()
         {
