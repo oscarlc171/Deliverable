@@ -48,7 +48,7 @@ namespace CKK.Logic.Models
             {
                 foreach (var product in Products)
                 {
-                    if (product.Product == prod)
+                    if (product.Product.Id == prod.Id)
                     {
                         product.Quantity += quantity;
                         return product;
@@ -66,7 +66,7 @@ namespace CKK.Logic.Models
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
         {
-            var existingItem = GetProductById(id);
+            bool foundItem = false;
             if (quantity < 0)
             {
                 throw new ArgumentOutOfRangeException();
@@ -80,22 +80,23 @@ namespace CKK.Logic.Models
                     {
                         product.Quantity = 0;
                         Products.Remove(product);
-                        return product;
                     }
 
                     else
                     {
                         product.Quantity -= quantity;
-                        return product;
                     }
-        
-                }
 
-                else
-                {
-                    throw new ProductDoesNotExistException();
+                    foundItem = true;
+                    return product;
                 }
             }
+
+            if (foundItem == false)
+            {
+                throw new ProductDoesNotExistException();
+            }
+
             return null;
         }
         public decimal GetTotal()
