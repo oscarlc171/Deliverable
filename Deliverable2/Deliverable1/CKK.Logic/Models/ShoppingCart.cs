@@ -44,23 +44,25 @@ namespace CKK.Logic.Models
                 throw new InventoryItemStockTooLowException();
             }
 
-            foreach (var product in Products)
+            else
             {
-                if (product.Product == prod)
+                foreach (var product in Products)
                 {
-                    product.Quantity += quantity;
-                    return product;
-                }
+                    if (product.Product == prod)
+                    {
+                        product.Quantity += quantity;
+                        return product;
+                    }
 
-                else
-                {
-                    var newProduct = new ShoppingCartItem(prod, quantity);
-                    Products.Add(newProduct);
-                    return newProduct;
+                    else
+                    {
+                        var newProduct = new ShoppingCartItem(prod, quantity);
+                        Products.Add(newProduct);
+                        return newProduct;
+                    }
                 }
+                return null;
             }
-            return null;
-
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
         {
