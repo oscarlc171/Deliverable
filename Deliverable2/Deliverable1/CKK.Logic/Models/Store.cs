@@ -20,7 +20,7 @@ namespace CKK.Logic.Models
 
             foreach (var item in _items)
             {
-                if (item.Product == prod)
+                if (item.Product.Id == prod.Id)
                 {
                     item.Quantity += quantity;
                     return item;
@@ -37,7 +37,6 @@ namespace CKK.Logic.Models
         }    
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
-            var existingItem = FindStoreItemById(id);
             if (quantity < 0)
             {
                 throw new ArgumentOutOfRangeException();

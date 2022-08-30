@@ -48,7 +48,7 @@ namespace CKK.Logic.Models
             {
                 foreach (var product in Products)
                 {
-                    if (product.Product == prod)
+                    if (product.Product.Id == prod.Id)
                     {
                         product.Quantity += quantity;
                         return product;
