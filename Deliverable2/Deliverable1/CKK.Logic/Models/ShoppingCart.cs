@@ -30,10 +30,13 @@ namespace CKK.Logic.Models
 
             else
             {
-                var getProductById =
-                    from product in Products
-                    where product.Product.Id == id
-                    select product;
+                foreach (var product in Products)
+                {
+                    if (product.Product.Id == id)
+                    {
+                        return product;
+                    }
+                }
             }
             return null;
         }
@@ -44,25 +47,18 @@ namespace CKK.Logic.Models
                 throw new InventoryItemStockTooLowException();
             }
 
+            var existingItem = GetProductById(prod.Id);
+            if (existingItem == null)
+            {
+                var newItem = new ShoppingCartItem(prod, quantity);
+                Products.Add(newItem);
+                return newItem;
+            }
             else
             {
-                foreach (var product in Products)
-                {
-                    if (product.Product == prod)
-                    {
-                        product.Quantity += quantity;
-                        return product;
-                    }
-
-                    else
-                    {
-                        var newProduct = new ShoppingCartItem(prod, quantity);
-                        Products.Add(newProduct);
-                        return newProduct;
-                    }
-                }
+                existingItem.Quantity += quantity;
+                return existingItem;
             }
-            return null;
 
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
