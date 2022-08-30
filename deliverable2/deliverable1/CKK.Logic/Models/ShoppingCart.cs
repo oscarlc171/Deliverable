@@ -61,8 +61,8 @@ namespace CKK.Logic.Models
                         return newProduct;
                     }
                 }
-                return null;
             }
+            return null;
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
         {
@@ -80,15 +80,16 @@ namespace CKK.Logic.Models
                     {
                         product.Quantity = 0;
                         Products.Remove(product);
+                        foundItem = true;
+                        return product;
                     }
 
                     else
                     {
                         product.Quantity -= quantity;
+                        foundItem = true;
+                        return product;
                     }
-
-                    foundItem = true;
-                    return product;
                 }
             }
 
@@ -102,9 +103,9 @@ namespace CKK.Logic.Models
         public decimal GetTotal()
         {
             decimal grandTotal = 0;
-            for (int i = 0; i < Products.Count; ++i)
+            foreach (var product in Products)
             {
-                grandTotal += Products[i].Product.Price * Products[i].Quantity;
+                grandTotal += product.Quantity * product.Product.Price;
             }
             return grandTotal;
         }

@@ -82,10 +82,13 @@ namespace CKK.Logic.Models
 
             else
             {
-                var findStoreItem =
-                  from item in _items
-                  where item.Product.Id == id
-                  select item;
+                foreach (var item in _items)
+                {
+                    if (item.Product.Id == id)
+                    {
+                        return item;
+                    }
+                }
             }
             return null;
         }
