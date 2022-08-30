@@ -18,22 +18,18 @@ namespace CKK.Logic.Models
                 throw new InventoryItemStockTooLowException();
             }
 
-            foreach (var item in _items)
+            var existingItem = FindStoreItemById(prod.Id);
+            if (existingItem != null)
             {
-                if (item.Product.Id == prod.Id)
-                {
-                    item.Quantity += quantity;
-                    return item;
-                }
-
-                else
-                {
-                    var newItem = new StoreItem(prod, quantity);
-                    _items.Add(newItem);
-                    return newItem;
-                }
+                existingItem.Quantity += quantity;
+                return existingItem;
             }
-            return null;
+            else
+            {
+                var newItem = new StoreItem(prod, quantity);
+                _items.Add(newItem);
+                return newItem;
+            }
         }    
         public StoreItem RemoveStoreItem(int id, int quantity)
         {
@@ -94,3 +90,28 @@ namespace CKK.Logic.Models
         }
     }
 }
+
+/* var getItemById =
+                    from item in _items
+                    where item.Product.Id == id
+                    select item;
+ */
+
+/* 
+ foreach (var item in _items)
+            {
+                if (item.Product.Id == prod.Id)
+                {
+                    item.Quantity += quantity;
+                    return item;
+                }
+
+                else
+                {
+                    var newItem = new StoreItem(prod, quantity);
+                    _items.Add(newItem);
+                    return newItem;
+                }
+            }
+            return null; 
+ */

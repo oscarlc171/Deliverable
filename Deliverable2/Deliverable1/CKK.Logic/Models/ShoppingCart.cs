@@ -48,7 +48,7 @@ namespace CKK.Logic.Models
             {
                 foreach (var product in Products)
                 {
-                    if (product.Product.Id == prod.Id)
+                    if (product.Product == prod)
                     {
                         product.Quantity += quantity;
                         return product;
@@ -63,6 +63,7 @@ namespace CKK.Logic.Models
                 }
             }
             return null;
+
         }
         public ShoppingCartItem RemoveProduct(int id, int quantity)
         {
