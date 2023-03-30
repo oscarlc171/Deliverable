@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vskEv0D7V772rhSeUyS7MGMtCZMombapx5l35N/b953p/vnWQ81TqzZr0CSKNa1fiPXDfw/DMw2659080DiNbg==",
+  "dgSpecHash": "KJb/xt50TWVZTbgK/eflKMtRK0yuiTMuuYOOnRIEfSMyTJzmxRIVnQsZgdNtefLO9vhPJDAg4jytIaVlhFea4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

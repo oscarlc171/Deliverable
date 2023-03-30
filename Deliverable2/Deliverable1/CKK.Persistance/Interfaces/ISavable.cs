@@ -10,9 +10,7 @@ namespace CKK.Persistance.Interfaces
 {
     internal interface ISavable
     {
-        public void Save()
-        {
-            
-        }
+        public void Save();
+        
     }
 }

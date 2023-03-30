@@ -1,0 +1,5 @@
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.csproj.AssemblyReference.cache
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.AssemblyInfoInputs.cache
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.AssemblyInfo.cs
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.csproj.CoreCompileInputs.cache

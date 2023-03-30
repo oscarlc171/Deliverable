@@ -8,9 +8,7 @@ namespace CKK.Persistance.Interfaces
 {
     internal interface ILoadable
     {
-        public void Load()
-        {
-
-        }
+        public void Load();
+        
     }
 }
