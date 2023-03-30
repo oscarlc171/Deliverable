@@ -34,7 +34,7 @@ namespace CKK.Persistance.Models
                 {
                     formatter.Serialize(sw, Items);
                     writer.Write(Items);
-                    writer.Dispose();
+                    writer.Close();
                     sw.Close();
                 }
                 
@@ -44,11 +44,20 @@ namespace CKK.Persistance.Models
 
         public void Load()
         {
-            var formatter = new BinaryFormatter();
-            using (StreamReader reader = new StreamReader(FilePath))
+            var reader = new BinaryFormatter();
+             
+            FileStream fileStream = new FileStream(FilePath, FileMode.OpenOrCreate, FileAccess.Read);
+            
+            using(StreamReader sr = new StreamReader(FilePath))
             {
-                
+                List<StoreItem> items = new List<StoreItem>();
+
+                items.Add((StoreItem)reader.Deserialize(fileStream));
+                Items = items;
+                sr.Close();
             }
+            
+
         }
 
         public StoreItem AddStoreItem(Product prod, int quantity)
