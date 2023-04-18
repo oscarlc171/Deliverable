@@ -88,6 +88,25 @@ namespace CKK.Logic.Models
             }
             return null;
         }
+
+        public List<StoreItem> GetAllProductsByName(string name)
+        {
+            List<StoreItem> itemsMatch = new List<StoreItem>();
+            foreach (var item in _items)
+            {
+                if (item.Product.Name.Contains(name))
+                {
+                    itemsMatch.Add(item);
+                }
+            }
+
+            if (!itemsMatch.Any())
+            {
+                return null;
+            }
+            itemsMatch.Sort();
+            return itemsMatch;
+        }
     }
 }
 
