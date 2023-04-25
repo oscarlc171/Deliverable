@@ -140,5 +140,82 @@ namespace CKK.Persistance.Models
             }
             return null;
         }
+
+        public List<StoreItem> GetAllProductsByName(string name)
+        {
+            List<StoreItem> itemsMatch = new List<StoreItem>();
+            foreach (var item in Items)
+            {
+                if (item.Product.Name.Contains(name))
+                {
+                    itemsMatch.Add(item);
+                }
+            }
+
+            if (!itemsMatch.Any())
+            {
+                return null;
+            }
+            itemsMatch.Sort();
+            return itemsMatch;
+        }
+
+        public List<StoreItem> GetProductsByQuantity()
+        {
+            bool sorted = false;
+            int count = Items.Count;
+
+            while (!sorted)
+            {
+                sorted = true;
+                for (var i = 0; i < count; i++)
+                {
+                    try
+                    {
+                        if (Items[i].Quantity > Items[i + 1].Quantity)
+                        {
+                            int j = Items[i].Quantity;
+                            Items[i].Quantity = Items[i + 1].Quantity;
+                            Items[i + 1].Quantity = j;
+                            sorted = false;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        break;
+                    }
+                }
+            }
+            return Items;
+        }
+
+        public List<StoreItem> GetProductsByPrice()
+        {
+            bool sorted = false;
+            int count = Items.Count;
+
+            while (!sorted)
+            {
+                sorted = true;
+                for (var i = 0; i < count; i++)
+                {
+                    try
+                    {
+                        if (Items[i].Product.Price > Items[i + 1].Product.Price)
+                        {
+                            decimal j = Items[i].Product.Price;
+                            Items[i].Product.Price = Items[i + 1].Product.Price;
+                            Items[i + 1].Product.Price = j;
+                            sorted = false;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        break;
+                    }
+                }
+            }
+            return Items;
+        }
     }
 }
