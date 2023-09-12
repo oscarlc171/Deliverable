@@ -9,6 +9,9 @@ namespace CKK.Logic.Models
 {
     public class Customer : Entity
     {
+        public int CustomerId { get; set; }
         public string Address { get; set; }
+        public int ShoppingCartId { get; set; };
+        ShoppingCart Cart { get; set; };
     }
 }

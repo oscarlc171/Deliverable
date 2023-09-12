@@ -107,6 +107,64 @@ namespace CKK.Logic.Models
             itemsMatch.Sort();
             return itemsMatch;
         }
+
+        public List<StoreItem> GetProductsByQuantity()
+        {
+            bool sorted = false;
+            int count = _items.Count;
+
+            while (!sorted)
+            {
+                sorted = true;
+                for (var i =0; i < count; i++)
+                {
+                    try
+                    {
+                        if (_items[i].Quantity > _items[i + 1].Quantity)
+                        {
+                            int j = _items[i].Quantity;
+                            _items[i].Quantity = _items[i + 1].Quantity;
+                            _items[i + 1].Quantity = j;
+                            sorted = false;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        break;
+                    }
+                }
+            }
+            return _items;
+        }
+
+        public List<StoreItem> GetProductsByPrice()
+        {
+            bool sorted = false;
+            int count = _items.Count;
+
+            while (!sorted)
+            {
+                sorted = true;
+                for (var i = 0; i < count; i++)
+                {
+                    try
+                    {
+                        if (_items[i].Product.Price > _items[i + 1].Product.Price)
+                        {
+                            decimal j = _items[i].Product.Price;
+                            _items[i].Product.Price = _items[i + 1].Product.Price;
+                            _items[i + 1].Product.Price = j;
+                            sorted = false;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        break;
+                    }
+                }
+            }
+            return _items;
+        }
     }
 }
 
