@@ -3,3 +3,8 @@ C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persi
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.AssemblyInfoInputs.cache
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.AssemblyInfo.cs
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.csproj.CoreCompileInputs.cache
+C:\Users\lucky\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.csproj.AssemblyReference.cache
+C:\Users\lucky\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucky\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.AssemblyInfoInputs.cache
+C:\Users\lucky\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.AssemblyInfo.cs
+C:\Users\lucky\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.Persistance\obj\Debug\net6.0\CKK.Persistance.csproj.CoreCompileInputs.cache

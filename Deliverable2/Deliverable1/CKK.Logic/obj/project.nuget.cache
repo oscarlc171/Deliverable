@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7o2udR/PhixqRtMJiN/pYTz6RohhEjEFc+L7l74eGIs3BMzrPgFDerI8xoxhjjdVB4YOxhy52zUDjSzotFqTBg==",
+  "dgSpecHash": "V+cBZ4lo6chG5qnFjRlbQF4HqHn0tdMBsqieuOwODN7XL6jHYhYhbazGVpEdd6rHEudfKmf5RYr1W2HBFWpBlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
+  "projectFilePath": "C:\\Users\\lucky\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\lucky\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\lucky\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\lucky\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
