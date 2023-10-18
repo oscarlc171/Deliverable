@@ -1,0 +1,194 @@
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csprojAssemblyReference.cache
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.InventoryManagementForm.resources
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.ItemEditorForm.resources
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.LoginForm.resources
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.NewItemForm.resources
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.Properties.Resources.resources
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.GenerateResource.cache
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.GeneratedMSBuildEditorConfig.editorconfig
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfoInputs.cache
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfo.cs
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.CoreCompileInputs.cache
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.exe
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.deps.json
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.runtimeconfig.json
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.runtimeconfig.dev.json
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\ref\CKK.UI.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.pdb
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.Logic.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.Logic.pdb
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.CopyComplete
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.dll
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\ref\CKK.UI.dll
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.pdb
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.genruntimeconfig.cache
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.Persistance.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\CKK.Persistance.pdb
+H:\StructuredProject\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.SearchResultsForm.resources
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\StructuredProject\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.exe
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.deps.json
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.runtimeconfig.json
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.runtimeconfig.dev.json
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.Logic.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.Persistance.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.Logic.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\bin\Debug\net5.0-windows\CKK.Persistance.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.AssemblyReference.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.InventoryManagementForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.ItemEditorForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.LoginForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.NewItemForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.Properties.Resources.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.SearchResultsForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.GenerateResource.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.GeneratedMSBuildEditorConfig.editorconfig
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfoInputs.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfo.cs
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.CoreCompileInputs.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.CopyComplete
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\refint\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.genruntimeconfig.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper\CKK.UI\obj\Debug\net5.0-windows\ref\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.exe
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.deps.json
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.runtimeconfig.json
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.runtimeconfig.dev.json
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.UI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\Dapper.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Win32.SystemEvents.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Configuration.ConfigurationManager.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Drawing.Common.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Security.AccessControl.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Security.Cryptography.ProtectedData.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Security.Permissions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Windows.Extensions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.Logic.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.Logic.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.AssemblyReference.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.InventoryManagementForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.ItemEditorForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.LoginForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.NewItemForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.Properties.Resources.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.SearchResultsForm.resources
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.GenerateResource.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.GeneratedMSBuildEditorConfig.editorconfig
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfoInputs.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfo.cs
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.CoreCompileInputs.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.CopyComplete
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\refint\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.pdb
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.genruntimeconfig.cache
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\obj\Debug\net5.0-windows\ref\CKK.UI.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\System.Runtime.CompilerServices.Unsafe.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.DB.dll
+G:\IS\SHARED\SOFTWARE DEV TEAM\Classroom stuff\Structured Projects\SP4\StructuredProjectDapper2022b\CKK.UI\bin\Debug\net5.0-windows\CKK.DB.pdb
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.dll
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\refint\CKK.UI.dll
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.pdb
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.AssemblyReference.cache
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.InventoryManagementForm.resources
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.ItemEditorForm.resources
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.LoginForm.resources
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.NewItemForm.resources
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.Properties.Resources.resources
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.SearchResultsForm.resources
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.GenerateResource.cache
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfoInputs.cache
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.AssemblyInfo.cs
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net5.0-windows\CKK.UI.csproj.CoreCompileInputs.cache

@@ -7,7 +7,7 @@ using CKK.Logic.Interfaces;
 
 namespace CKK.Logic.Models
 {
-    public class Customer : Entity
+    public class Customer
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucky\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj": {}
+    "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucky\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj": {
+    "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucky\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
+        "projectUniqueName": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
         "projectName": "CKK.Logic",
-        "projectPath": "C:\\Users\\lucky\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
-        "packagesPath": "C:\\Users\\lucky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucky\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\obj\\",
+        "projectPath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
+        "packagesPath": "C:\\Users\\4400113702\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lucky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\4400113702\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -69,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

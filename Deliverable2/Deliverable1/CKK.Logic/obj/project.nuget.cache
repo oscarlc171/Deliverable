@@ -1,12 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "V+cBZ4lo6chG5qnFjRlbQF4HqHn0tdMBsqieuOwODN7XL6jHYhYhbazGVpEdd6rHEudfKmf5RYr1W2HBFWpBlg==",
+  "dgSpecHash": "q4d2dk6ZhhgN6HmS+tefa8GA4qhb6dCUYM7ck2tLfWoUngnwRT24hXsNoGPSvN6BgJ5/GBWOoJtpLn1USqA1kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucky\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
+  "projectFilePath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lucky\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\lucky\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\lucky\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\4400113702\\.nuget\\packages\\dapper\\2.1.11\\dapper.2.1.11.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

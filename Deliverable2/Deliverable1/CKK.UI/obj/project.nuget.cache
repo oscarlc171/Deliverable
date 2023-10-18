@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "U/+BUQB3hzMiOQbK8HXUlum/6sSDz2fsrJ9rgOtPpMC/pgC0VUMOcO7lNvmquntP7ka/0of32WofaB+j4JvTYQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\CKK.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\4400113702\\.nuget\\packages\\dapper\\2.1.11\\dapper.2.1.11.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project CKK.DB is not compatible with net5.0-windows7.0 (.NETCoreApp,Version=v5.0). Project CKK.DB supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "CKK.DB",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}

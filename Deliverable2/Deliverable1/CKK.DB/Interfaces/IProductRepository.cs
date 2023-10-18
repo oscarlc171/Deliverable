@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CKK.DB.Interfaces
 {
-    interface IProductRepository : IGenericRepository<Product>
+    public interface IProductRepository : IGenericRepository<Product>
     {
         List<Product> GetByName(string name);
     }

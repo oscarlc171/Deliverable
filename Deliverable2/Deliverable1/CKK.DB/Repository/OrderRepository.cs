@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 
 namespace CKK.DB.Repository
 {
-    internal class OrderRepository : IOrderRepository
+    public class OrderRepository : IOrderRepository
     {
+        private readonly IConnectionFactory _connectionFactory;
+        public OrderRepository(IConnectionFactory Conn)
+        {
+            _connectionFactory = Conn;
+        }
         public int Add(Order entity)
         {
             throw new NotImplementedException();
