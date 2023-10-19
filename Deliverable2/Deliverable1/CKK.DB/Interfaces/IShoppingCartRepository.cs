@@ -16,5 +16,8 @@ namespace CKK.DB.Interfaces
         void Ordered(int shoppingCartId);
         int Update(ShoppingCartItem entity);
         int Add(ShoppingCartItem entity);
+        Task<int> UpdateAsync(ShoppingCartItem item);
+        Task<Product> AddAsync(ShoppingCartItem item);
+
     }
 }

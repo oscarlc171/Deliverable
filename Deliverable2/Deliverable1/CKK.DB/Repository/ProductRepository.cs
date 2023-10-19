@@ -58,6 +58,11 @@ namespace CKK.DB.Repository
             throw new NotImplementedException();
         }
 
+        public Task<Product> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
 
+        
     }
 }

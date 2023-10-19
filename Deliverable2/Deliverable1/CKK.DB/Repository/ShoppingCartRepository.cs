@@ -84,5 +84,15 @@ namespace CKK.DB.Repository
         {
             throw new NotImplementedException();
         }
+
+        public Task<int> UpdateAsync(ShoppingCartItem item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Product> AddAsync(ShoppingCartItem item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
