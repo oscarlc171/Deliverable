@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CKK.Logic.Exceptions;
-using CKK.Logic.Interfaces;
 
 namespace CKK.Logic.Models
 {
 	[Serializable]
-	public class ShoppingCartItem : InventoryItem
+	public class ShoppingCartItem
 	{
         public Product Product { get; set; }
         public int ShoppingCartId { get; set; }
