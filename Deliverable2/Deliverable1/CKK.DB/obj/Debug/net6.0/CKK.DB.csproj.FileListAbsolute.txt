@@ -8,3 +8,4 @@ C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\ob
 C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Debug\net6.0\CKK.DB.AssemblyInfoInputs.cache
 C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Debug\net6.0\CKK.DB.AssemblyInfo.cs
 C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Debug\net6.0\CKK.DB.csproj.CoreCompileInputs.cache
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Debug\net6.0\CKK.DB.dll

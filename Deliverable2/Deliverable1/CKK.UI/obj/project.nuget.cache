@@ -1,35 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "CcWvRi3yDXforel3T0m90tQMZX7Nog/saG4aw6ZW+r4cKj75Ux18UKlRtGp8SolX+tPWACDg3YKZJUqoyzfwyA==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\CKK.UI.csproj",
+  "dgSpecHash": "GnF3lLmclUYIOXqjHVntHYXiGiVOjRKK5IuYKNzmveSi/afRYrzXRUv0IT6YVjO2/sLVU9M1bqq4ZMtQZl9ebQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\CKK.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\4400113702\\.nuget\\packages\\dapper\\2.1.11\\dapper.2.1.11.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\4400113702\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project CKK.DB is not compatible with net5.0-windows7.0 (.NETCoreApp,Version=v5.0). Project CKK.DB supports: net6.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "CKK.DB",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

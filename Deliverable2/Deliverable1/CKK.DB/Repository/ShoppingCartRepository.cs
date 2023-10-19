@@ -56,7 +56,13 @@ namespace CKK.DB.Repository
 
         public List<ShoppingCartItem> GetProducts(int shoppingCartId)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM ShoppingCartItems WHERE Id = @Id";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault(sql, new { Id = shoppingCartId });
+                return result;
+            }
         }
 
         public decimal GetTotal(int ShoppingCartId)
