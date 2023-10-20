@@ -52,7 +52,13 @@ namespace CKK.DB.Repository
 
         public int ClearCart(int shoppingCartId)
         {
-            throw new NotImplementedException();
+            var sql = "DELETE FROM ShoppingCartItems WHERE Id = @Id";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.Execute(sql, shoppingCartId);
+                return result;
+            }
         }
 
         public List<ShoppingCartItem> GetProducts(int shoppingCartId)
@@ -71,7 +77,7 @@ namespace CKK.DB.Repository
             var sql = @"SELECT SUM(p.Price) 
                         FROM ShoppingCartItems sci 
                         JOIN Products p on sci.ProductId = p.Id 
-                        WHERE Id = @Id;";
+                        WHERE sci.Id = @Id;";
 
             using (var connection = _connectionFactory.GetConnection)
             {
@@ -83,7 +89,12 @@ namespace CKK.DB.Repository
 
         public void Ordered(int shoppingCartId)
         {
-            throw new NotImplementedException();
+            var sql = "DELETE FROM ShoppingCartItems WHERE Id = @Id";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.Execute(sql, new {Id = shoppingCartId});
+            }
         }
 
         public int Update(ShoppingCartItem entity)
@@ -99,7 +110,7 @@ namespace CKK.DB.Repository
            
         public int Add(ShoppingCartItem entity)
         {
-            throw new NotImplementedException();
+            var sql = "INSERT INTO ShoppingCartItems (ShoppingCartId, ProductId, Quantity) VALUES (@)";
         }
     }
 }
