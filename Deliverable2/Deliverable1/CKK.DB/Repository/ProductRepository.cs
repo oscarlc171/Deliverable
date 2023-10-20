@@ -29,12 +29,24 @@ namespace CKK.DB.Repository
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            var sql = "DELETE FROM Products WHERE Id = @Id";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.Execute(sql, new {Id = id});
+                return result;
+            }
         }
 
         public List<Product> GetAll()
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Products";
+            using(var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault(sql);
+                return result;
+            }
         }
 
         public Product GetById(int id)
@@ -50,17 +62,24 @@ namespace CKK.DB.Repository
 
         public List<Product> GetByName(string name)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Products WHERE Name = @name";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault(sql, new { Name = name });
+                return result;
+            }
         }
 
         public int Update(Product entity)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<Product> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
+            var sql = "UPDATE Products SET Price = @Price, Quantity = @Quantity, Name = @Name WHERE Id = @Id";
+            using(var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault(sql, entity);
+                return result;
+            }
         }
 
         
