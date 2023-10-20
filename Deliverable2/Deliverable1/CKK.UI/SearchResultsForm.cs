@@ -30,7 +30,7 @@ namespace CKK.UI
             Close();
         }
 
-        private async void EditButton_Click(object sender, EventArgs e)
+        private void EditButton_Click(object sender, EventArgs e)
         {
             var selected = (Product)SearchResultsListBox.SelectedItem;
             var selectedIndex = SearchResultsListBox.SelectedIndex;
@@ -38,13 +38,13 @@ namespace CKK.UI
             {
                 ItemEditorForm editor = new(selected);
                 editor.ShowDialog();
-                await UOW.Products.UpdateAsync(editor.Item);
+                UOW.Products.Update(editor.Item);
             }
         }
 
-        private async void PopulateSearchBox()
+        private void PopulateSearchBox()
         {
-            var results = await UOW.Products.GetByNameAsync(Search);
+            var results = UOW.Products.GetByName(Search);
             if(results.Count <= 0)
             {
                 MessageBox.Show("There are no items that match your search");
@@ -68,7 +68,7 @@ namespace CKK.UI
 
                 if (result == DialogResult.Yes)
                 {
-                    UOW.Products.DeleteAsync(selected.Id);
+                    UOW.Products.Delete(selected.Id);
                     SearchResultsListBox.Items.RemoveAt(selectedIndex);
                 }
             }

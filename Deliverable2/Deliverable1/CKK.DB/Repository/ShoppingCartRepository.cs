@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using static Dapper.SqlMapper;
 
 namespace CKK.DB.Repository
 {
@@ -22,7 +23,7 @@ namespace CKK.DB.Repository
             using (var conn = _connectionFactory.GetConnection)
             {
                 ProductRepository _productRepository = new ProductRepository(_connectionFactory);
-                var item = _productRepository.GetByIdAsync(ProductId).Result;
+                var item = _productRepository.GetById(ProductId);
                 var ProductItems = GetProducts(ShoppingCardId).Find(x => x.ProductId == ProductId);
 
                 var shopitem = new ShoppingCartItem()
@@ -37,12 +38,12 @@ namespace CKK.DB.Repository
                     if (ProductItems != null)
                     {
                         //Product already in cart so update quantity
-                        var test = UpdateAsync(shopitem);
+                        var test = Update(shopitem);
                     }
                     else
                     {
                         //New product for the cart so add it
-                        var test = AddAsync(shopitem);
+                        var test = Add(shopitem);
                     }
                 }
                 return shopitem;
@@ -67,7 +68,17 @@ namespace CKK.DB.Repository
 
         public decimal GetTotal(int ShoppingCartId)
         {
-            throw new NotImplementedException();
+            var sql = @"SELECT SUM(p.Price) 
+                        FROM ShoppingCartItems sci 
+                        JOIN Products p on sci.ProductId = p.Id 
+                        WHERE Id = @Id;";
+
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault(sql, new {Id = ShoppingCartId});
+                return result;
+            }
         }
 
         public void Ordered(int shoppingCartId)
@@ -87,16 +98,6 @@ namespace CKK.DB.Repository
         }
            
         public int Add(ShoppingCartItem entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> UpdateAsync(ShoppingCartItem item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Product> AddAsync(ShoppingCartItem item)
         {
             throw new NotImplementedException();
         }

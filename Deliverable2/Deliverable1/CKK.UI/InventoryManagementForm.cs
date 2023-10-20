@@ -26,19 +26,19 @@ namespace CKK.UI
             RefreshList();
         }
 
-        private async void RefreshList()
+        private void RefreshList()
         {
             InventoryList.Items.Clear();
-            var products = await UOW.Products.GetAllAsync();
+            var products = UOW.Products.GetAll();
             foreach (var item in products)
             {
                 InventoryList.Items.Add(item);
             }
         }
-        private async void RefreshListWithSelected(int selected)
+        private void RefreshListWithSelected(int selected)
         {
             InventoryList.Items.Clear();
-            var products = await UOW.Products.GetAllAsync();
+            var products =  UOW.Products.GetAll();
             foreach (var item in products)
             {
                 InventoryList.Items.Add(item);
@@ -68,12 +68,12 @@ namespace CKK.UI
             //Only if the user hits the Create button will it add it to the store. 
             if (result == DialogResult.OK)
             {
-                UOW.Products.AddAsync(newItemForm.Item);
+                UOW.Products.Add(newItemForm.Item);
                 RefreshList();
             }
         }
 
-        private async void EditButton_Click(object sender, EventArgs e)
+        private void EditButton_Click(object sender, EventArgs e)
         {
             var selected = (Product)InventoryList.SelectedItem;
             int selectedIndex = InventoryList.SelectedIndex;
@@ -82,7 +82,7 @@ namespace CKK.UI
                 ItemEditorForm editor = new(selected);
                 editor.ShowDialog();
  
-                await UOW.Products.UpdateAsync(editor.Item);
+                UOW.Products.Update(editor.Item);
                 RefreshListWithSelected(selectedIndex);
             }
         }
@@ -96,7 +96,7 @@ namespace CKK.UI
 
                 if (result == DialogResult.Yes)
                 {
-                    UOW.Products.DeleteAsync(selected.Id);
+                    UOW.Products.Delete(selected.Id);
                 }
             }
             RefreshList();

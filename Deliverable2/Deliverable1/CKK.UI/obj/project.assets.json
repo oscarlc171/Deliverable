@@ -861,9 +861,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\CKK.UI.csproj",
+      "projectUniqueName": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\CKK.UI.csproj",
       "projectName": "CKK.UI",
-      "projectPath": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\CKK.UI.csproj",
+      "projectPath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\CKK.UI.csproj",
       "packagesPath": "C:\\Users\\4400113702\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.UI\\obj\\",
       "projectStyle": "PackageReference",
@@ -882,11 +882,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.DB\\CKK.DB.csproj": {
-              "projectPath": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.DB\\CKK.DB.csproj"
+            "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.DB\\CKK.DB.csproj": {
+              "projectPath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.DB\\CKK.DB.csproj"
             },
-            "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj": {
-              "projectPath": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj"
+            "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj": {
+              "projectPath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj"
             }
           }
         }

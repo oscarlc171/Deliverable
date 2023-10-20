@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gmjJv0XUNIpKPX9RMAtuzxIgVG8JuvqUJhxF1PiQ6Vj4cYn2f+xKBzYRXVzCupSOGyn8PskXWq9bbxwKlGimEw==",
+  "dgSpecHash": "LeBd/wQMT6e9/7nEFZKJPHdvuWiFSDcQ6djG1UOPfT6bClcGCrvq6yu23IuQnH+xWkBmZs7KEBPtDLnpTZtbbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\4400113702\\Source\\Repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
+  "projectFilePath": "C:\\Users\\4400113702\\source\\repos\\Deliverable\\Deliverable2\\Deliverable1\\CKK.Logic\\CKK.Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\4400113702\\.nuget\\packages\\dapper\\2.1.11\\dapper.2.1.11.nupkg.sha512",
     "C:\\Users\\4400113702\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
