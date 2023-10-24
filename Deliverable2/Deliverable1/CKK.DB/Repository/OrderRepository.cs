@@ -1,5 +1,6 @@
 ﻿using CKK.DB.Interfaces;
 using CKK.Logic.Models;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,32 +18,68 @@ namespace CKK.DB.Repository
         }
         public int Add(Order entity)
         {
-            throw new NotImplementedException();
+            var sql = "Insert into Orders (OrderNumber,CustomerId,ShoppingCartId) VALUES (@OrderNumber,@CustomerId,@ShoppingCartId)";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.Execute(sql, entity);
+                return result;
+            }
         }
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            var sql = "DELETE FROM Orders WHERE Id = @Id";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.Execute(sql, new { Id = id });
+                return result;
+            }
         }
 
         public List<Order> GetAll()
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Orders";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault(sql);
+                return result;
+            }
         }
 
         public Order GetById(int id)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Orders WHERE Id = @Id";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault<Order>(sql, new { Id = id });
+                return result;
+            }
         }
 
         public Order GetOrderByCustomer(int id)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Orders WHERE CustomerId = @CustomerId";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault<Order>(sql, new { CustomerId = id });
+                return result;
+            }
         }
 
         public int Update(Order entity)
         {
-            throw new NotImplementedException();
+            var sql = "UPDATE Orders SET OrderNumber = @OrderNumber, CustomerId = @CustomerId, ShoppingCartId = @ShoppingCartId WHERE Id = @Id";
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                connection.Open();
+                var result = connection.QuerySingleOrDefault(sql, entity);
+                return result;
+            }
         }
     }
 }

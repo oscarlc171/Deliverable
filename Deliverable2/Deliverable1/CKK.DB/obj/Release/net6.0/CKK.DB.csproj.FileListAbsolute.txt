@@ -1,0 +1,5 @@
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Release\net6.0\CKK.DB.csproj.AssemblyReference.cache
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Release\net6.0\CKK.DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Release\net6.0\CKK.DB.AssemblyInfoInputs.cache
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Release\net6.0\CKK.DB.AssemblyInfo.cs
+C:\Users\4400113702\source\repos\Deliverable\Deliverable2\Deliverable1\CKK.DB\obj\Release\net6.0\CKK.DB.csproj.CoreCompileInputs.cache
