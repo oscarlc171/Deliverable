@@ -44,8 +44,8 @@ namespace CKK.DB.Repository
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();
-                var result = connection.QuerySingleOrDefault(sql);
-                return result;
+                var result = connection.Query<Order>(sql);
+                return result.ToList();
             }
         }
 

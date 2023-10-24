@@ -35,6 +35,8 @@ namespace CKK.UI
                 InventoryList.Items.Add(item);
             }
         }
+
+        
         private void RefreshListWithSelected(int selected)
         {
             InventoryList.Items.Clear();

@@ -73,6 +73,7 @@ namespace CKK.UI
             this.PasswordTextBox.Size = new System.Drawing.Size(351, 43);
             this.PasswordTextBox.TabIndex = 2;
             this.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PasswordTextBox.UseSystemPasswordChar = true;
             this.PasswordTextBox.Enter += new System.EventHandler(this.TextBox_Enter);
             this.PasswordTextBox.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
