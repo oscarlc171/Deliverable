@@ -33,8 +33,12 @@ C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bi
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net6.0-windows\CKK.UI.dll
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net6.0-windows\refint\CKK.UI.dll
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net6.0-windows\CKK.UI.pdb
-C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.DB.deps.json
-C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.DB.runtimeconfig.json
-C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.DB.exe
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.UI.exe
 C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net6.0-windows\CKK.UI.csproj.CopyComplete
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.UI.deps.json
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.UI.runtimeconfig.json
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.UI.dll
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.UI.pdb
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\bin\Debug\net6.0-windows\CKK.DB.pdb
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net6.0-windows\CKK.UI.genruntimeconfig.cache
+C:\Users\4400113702\Source\Repos\Deliverable\Deliverable2\Deliverable1\CKK.UI\obj\Debug\net6.0-windows\ref\CKK.UI.dll
