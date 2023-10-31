@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using static Dapper.SqlMapper;
+using System.Security.Principal;
 
 namespace CKK.DB.Repository
 {
@@ -63,28 +64,26 @@ namespace CKK.DB.Repository
 
         public List<ShoppingCartItem> GetProducts(int shoppingCartId)
         {
-            var sql = "SELECT * FROM ShoppingCartItems WHERE Id = @Id";
+            var sql = "SELECT * FROM ShoppingCartItems WHERE ShoppingCartId = @Id";
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();
-                var result = connection.QuerySingleOrDefault(sql, new { Id = shoppingCartId });
-                return result;
+                var result = connection.Query<ShoppingCartItem>(sql, new { Id = shoppingCartId });
+                return result.ToList();
             }
         }
 
         public decimal GetTotal(int ShoppingCartId)
         {
-            var sql = @"SELECT SUM(p.Price) 
-                        FROM ShoppingCartItems sci 
-                        JOIN Products p on sci.ProductId = p.Id 
-                        WHERE sci.Id = @Id;";
-
-            using (var connection = _connectionFactory.GetConnection)
+            ShoppingCartRepository productRepository = new ShoppingCartRepository(_connectionFactory);
+            var products = productRepository.GetProducts(ShoppingCartId);
+            decimal total = 0;
+            
+            foreach(var product in products)
             {
-                connection.Open();
-                var result = connection.QuerySingleOrDefault(sql, new {Id = ShoppingCartId});
-                return result;
+                total += product.Product.Price;
             }
+            return total;
         }
 
         public void Ordered(int shoppingCartId)

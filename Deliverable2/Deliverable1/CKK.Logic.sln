@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CKK.DB", "CKK.DB\CKK.DB.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CKK.UI", "CKK.UI\CKK.UI.csproj", "{CBE51510-D378-4139-8994-56A5BC95C3AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CKK.Web", "CKK.Web\CKK.Web.csproj", "{7437A2E6-7B68-4F9F-809E-43E51F9A879D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CBE51510-D378-4139-8994-56A5BC95C3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBE51510-D378-4139-8994-56A5BC95C3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBE51510-D378-4139-8994-56A5BC95C3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7437A2E6-7B68-4F9F-809E-43E51F9A879D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7437A2E6-7B68-4F9F-809E-43E51F9A879D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7437A2E6-7B68-4F9F-809E-43E51F9A879D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7437A2E6-7B68-4F9F-809E-43E51F9A879D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

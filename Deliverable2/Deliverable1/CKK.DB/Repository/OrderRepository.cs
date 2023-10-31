@@ -51,11 +51,11 @@ namespace CKK.DB.Repository
 
         public Order GetById(int id)
         {
-            var sql = "SELECT * FROM Orders WHERE Id = @Id";
+            var sql = "SELECT * FROM Orders WHERE OrderId = @Id";
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();
-                var result = connection.QuerySingleOrDefault<Order>(sql, new { Id = id });
+                var result = connection.QuerySingle<Order>(sql, new { Id = id });
                 return result;
             }
         }
@@ -66,7 +66,7 @@ namespace CKK.DB.Repository
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();
-                var result = connection.QuerySingleOrDefault<Order>(sql, new { CustomerId = id });
+                var result = connection.QuerySingle<Order>(sql, new { CustomerId = id });
                 return result;
             }
         }
