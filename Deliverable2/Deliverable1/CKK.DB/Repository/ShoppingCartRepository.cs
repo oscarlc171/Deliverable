@@ -75,15 +75,13 @@ namespace CKK.DB.Repository
 
         public decimal GetTotal(int ShoppingCartId)
         {
-            ShoppingCartRepository productRepository = new ShoppingCartRepository(_connectionFactory);
-            var products = productRepository.GetProducts(ShoppingCartId);
-            decimal total = 0;
-            
-            foreach(var product in products)
+            var sql = "SELECT SUM(Price) FROM ShoppingCartItems s JOIN Products p ON s.ProductId = p.Id WHERE ShoppingCartId = @Id";
+            using (var connections = _connectionFactory.GetConnection)
             {
-                total += product.Product.Price;
+                connections.Open();
+                var result = connections.QueryFirst<decimal>(sql, new { Id = ShoppingCartId });
+                return result;
             }
-            return total;
         }
 
         public void Ordered(int shoppingCartId)

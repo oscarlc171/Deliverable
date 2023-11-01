@@ -29,7 +29,7 @@ namespace CKK.DB.Repository
 
         public int Delete(int id)
         {
-            var sql = "DELETE FROM Orders WHERE Id = @Id";
+            var sql = "DELETE FROM Orders WHERE OrderId = @Id";
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();

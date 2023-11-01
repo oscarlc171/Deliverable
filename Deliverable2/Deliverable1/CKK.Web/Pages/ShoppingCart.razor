@@ -50,14 +50,17 @@ else
     {
         if (uow != null) //Valid uow
         {
-            order = uow.Orders.GetById(1);
-            if (order == null) //Make new order when no active orders found
+            var orders = uow.Orders.GetAll();
+            order = orders.FirstOrDefault();
+            if (uow == null)
             {
                 Order newOrder = new Order() { OrderId = 1, OrderNumber = "1", CustomerId = 1, ShoppingCartId = 100 };
                 order = newOrder;
                 uow.Orders.Add(newOrder);
             }
         }
+        
+        
     }
 
     protected void spinnerChange(int productId, object value)
@@ -83,13 +86,20 @@ else
         var cartItems = uow.ShoppingCarts.GetProducts(order.ShoppingCartId);
         foreach (var item in cartItems)
         {
-            Product prod = inventory.Where(x => x.Id == item.ProductId).FirstOrDefault();
+            Product prod = new Product();
+            foreach (var product in inventory)
+            {
+                if(product.Id == item.ProductId)
+                {
+                    prod = product;
+                }
+            }
             prod.Quantity -= item.Quantity;
             uow.Products.Update(prod);
         }
 
         //For the assignment we just delete or clear
-        uow.Orders.Delete(1);
+        uow.Orders.Delete(order.OrderId);
         uow.ShoppingCarts.ClearCart(order.ShoppingCartId);
 
         UpdateTotal();
