@@ -53,7 +53,7 @@ namespace CKK.DB.Repository
 
         public int ClearCart(int shoppingCartId)
         {
-            var sql = "DELETE FROM ShoppingCartItems WHERE Id = @Id";
+            var sql = "DELETE FROM ShoppingCartItems WHERE ShoppingCartId = @Id";
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();
@@ -79,7 +79,7 @@ namespace CKK.DB.Repository
             using (var connections = _connectionFactory.GetConnection)
             {
                 connections.Open();
-                var result = connections.QueryFirst<decimal>(sql, new { Id = ShoppingCartId });
+                var result = connections.QueryFirstOrDefault<decimal>(sql, new { Id = ShoppingCartId });
                 return result;
             }
         }

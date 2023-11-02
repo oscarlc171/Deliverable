@@ -18,7 +18,7 @@ namespace CKK.DB.Repository
         }
         public int Add(Order entity)
         {
-            var sql = "Insert into Orders (OrderNumber,CustomerId,ShoppingCartId) VALUES (@OrderNumber,@CustomerId,@ShoppingCartId)";
+            var sql = "Insert into Orders VALUES (@OrderId, @OrderNumber,@CustomerId,@ShoppingCartId)";
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();
@@ -55,7 +55,7 @@ namespace CKK.DB.Repository
             using (var connection = _connectionFactory.GetConnection)
             {
                 connection.Open();
-                var result = connection.QuerySingle<Order>(sql, new { Id = id });
+                var result = connection.QuerySingleOrDefault<Order>(sql, new { Id = id });
                 return result;
             }
         }

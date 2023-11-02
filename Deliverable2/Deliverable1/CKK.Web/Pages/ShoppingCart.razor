@@ -48,19 +48,18 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        
         if (uow != null) //Valid uow
         {
-            var orders = uow.Orders.GetAll();
-            order = orders.FirstOrDefault();
-            if (uow == null)
+            order = uow.Orders.GetById(1);
+            if (order == null) //Make new order when no active orders found
             {
                 Order newOrder = new Order() { OrderId = 1, OrderNumber = "1", CustomerId = 1, ShoppingCartId = 100 };
                 order = newOrder;
                 uow.Orders.Add(newOrder);
             }
         }
-        
-        
+        uow.ShoppingCarts.ClearCart(order.ShoppingCartId);
     }
 
     protected void spinnerChange(int productId, object value)
@@ -70,13 +69,15 @@ else
         UpdateTotal();
     }
 
-    string checkoutTotal = "Check Out - .00";
+    
 
     private void UpdateTotal()
     {
         var total = uow.ShoppingCarts.GetTotal(order.ShoppingCartId).ToString("c");
         checkoutTotal = "Check Out - " + total;
     }
+
+    string checkoutTotal = "Check Out - .00";
 
     protected void CheckOut()
     {
@@ -99,8 +100,8 @@ else
         }
 
         //For the assignment we just delete or clear
-        uow.Orders.Delete(order.OrderId);
-        uow.ShoppingCarts.ClearCart(order.ShoppingCartId);
+        uow.Orders.Delete(1); 
+
 
         UpdateTotal();
         NavManager.NavigateTo("/checkout");
